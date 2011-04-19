@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./jlc $1.js > $1.j
+java -jar jasmin/jasmin-2.4/jasmin.jar $1.j
+java $1

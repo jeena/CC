@@ -1,0 +1,8 @@
+module TypeChecker where
+
+import AbsJavalette
+import PrintJavalette
+import ErrM
+
+typecheck :: Program -> Err()
+typecheck (Program fs) = fail printTree fs
